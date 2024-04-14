@@ -58,16 +58,35 @@
 
 // Calling other functions
 
-function cutFruitPieces(fruit) {
-  return fruit * 4;
-}
+// function cutFruitPieces(fruit) {
+//   return fruit * 4;
+// }
 
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutFruitPieces(apples);
-  const orangePieces = cutFruitPieces(oranges);
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
 
-  const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges.`;
-  return juice;
-}
+//   const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges.`;
+//   return juice;
+// }
 
-console.log(fruitProcessor(2, 3));
+// console.log(fruitProcessor(2, 3));
+
+// Arrays
+
+// most used
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+// other way
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]); //michael
+console.log(friends[1]); //steven
+
+console.log(friends.length);
+console.log(friends.length - 1); //last data inside a array
+
+// changing the data inside a array
+friends[2] = "Jay"; //peter > jay
+console.log(friends);
