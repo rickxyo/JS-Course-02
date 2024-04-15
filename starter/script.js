@@ -75,18 +75,48 @@
 // Arrays
 
 // most used
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
+
+// // other way
+// const years = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0]); //michael
+// console.log(friends[1]); //steven
+
+// console.log(friends.length);
+// console.log(friends.length - 1); //last data inside a array
+
+// // changing the data inside a array
+// friends[2] = "Jay"; //peter > jay
+// console.log(friends);
+
+//Array Operations (Methods)
+
+// Push = add elements to the end of the array
 const friends = ["Michael", "Steven", "Peter"];
+const newLenght = friends.push("Jay");
+console.log(newLenght);
+
+// Unshift = add elements to the beginning of the array
+friends.unshift("John");
 console.log(friends);
 
-// other way
-const years = new Array(1991, 1984, 2008, 2020);
-
-console.log(friends[0]); //michael
-console.log(friends[1]); //steven
-
-console.log(friends.length);
-console.log(friends.length - 1); //last data inside a array
-
-// changing the data inside a array
-friends[2] = "Jay"; //peter > jay
+// Pop = remove the last element of the array
+friends.pop();
 console.log(friends);
+
+// Shift = remove the first element of the array
+friends.shift();
+console.log(friends);
+
+// Indexof = return the position of the element
+console.log(friends.indexOf("Steven"));
+
+// Includes = return true if the element is in the array, false if its not
+console.log(friends.includes("Steven")); //true
+console.log(friends.includes("Bob")); //false
+
+if (friends.includes("Peter")) {
+  console.log("You have a friend called Peter");
+}
