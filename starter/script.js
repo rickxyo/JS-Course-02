@@ -94,29 +94,48 @@
 //Array Operations (Methods)
 
 // Push = add elements to the end of the array
-const friends = ["Michael", "Steven", "Peter"];
-const newLenght = friends.push("Jay");
-console.log(newLenght);
+// const friends = ["Michael", "Steven", "Peter"];
+// const newLenght = friends.push("Jay");
+// console.log(newLenght);
+// // Unshift = add elements to the beginning of the array
+// friends.unshift("John");
+// console.log(friends);
 
-// Unshift = add elements to the beginning of the array
-friends.unshift("John");
-console.log(friends);
+// // Pop = remove the last element of the array
+// friends.pop();
+// console.log(friends);
 
-// Pop = remove the last element of the array
-friends.pop();
-console.log(friends);
+// // Shift = remove the first element of the array
+// friends.shift();
+// console.log(friends);
 
-// Shift = remove the first element of the array
-friends.shift();
-console.log(friends);
+// // Indexof = return the position of the element
+// console.log(friends.indexOf("Steven"));
 
-// Indexof = return the position of the element
-console.log(friends.indexOf("Steven"));
+// // Includes = return true if the element is in the array, false if its not
+// console.log(friends.includes("Steven")); //true
+// console.log(friends.includes("Bob")); //false
 
-// Includes = return true if the element is in the array, false if its not
-console.log(friends.includes("Steven")); //true
-console.log(friends.includes("Bob")); //false
+// if (friends.includes("Peter")) {
+//   console.log("You have a friend called Peter");
+// }
 
-if (friends.includes("Peter")) {
-  console.log("You have a friend called Peter");
-}
+// Objects x Arrays
+
+// Array
+const pedroArray = [
+  "Pedro Henrique",
+  "Oldoni",
+  2024 - 2005,
+  "Software Engineer",
+  ["Gabriel", "Alex", "Juliano"],
+];
+
+// Object
+const pedro = {
+  firstName: "Pedro Henrique",
+  lastName: "Oldoni",
+  age: 2024 - 2005,
+  job: "Software Engineer",
+  friends: ["Gabriel", "Alex", "Juliano"],
+};
