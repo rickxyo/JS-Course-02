@@ -124,29 +124,60 @@
 // Objects x Arrays
 
 // Array
-const pedroArray = [
-  "Pedro Henrique",
-  "Oldoni",
-  2024 - 2005,
-  "Software Engineer",
-  ["Gabriel", "Alex", "Juliano"],
-];
+// const pedroArray = [
+//   "Pedro Henrique",
+//   "Oldoni",
+//   2024 - 2005,
+//   "Software Engineer",
+//   ["Gabriel", "Alex", "Juliano"],
+// ];
 
-// Object
+// // Object
+// const pedro = {
+//   firstName: "Pedro Henrique",
+//   lastName: "Oldoni",
+//   age: 2024 - 2005,
+//   job: "Software Engineer",
+//   friends: ["Gabriel", "Alex", "Juliano"],
+// };
+
+// console.log(pedro);
+
+// // Dot vs Bracket notation
+// console.log(pedro.lastName);
+// console.log(pedro["lastName"]);
+
+// const nameKey = "Name";
+// console.log(pedro["first" + nameKey]);
+// console.log(pedro["last" + nameKey]);
+
 const pedro = {
   firstName: "Pedro Henrique",
   lastName: "Oldoni",
-  age: 2024 - 2005,
+  birthYear: 2005,
   job: "Software Engineer",
   friends: ["Gabriel", "Alex", "Juliano"],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} year old ${
+      pedro.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver´s license.`;
+  },
 };
 
-console.log(pedro);
-
-// Dot vs Bracket notation
-console.log(pedro.lastName);
-console.log(pedro["lastName"]);
-
-const nameKey = "Name";
-console.log(pedro["first" + nameKey]);
-console.log(pedro["last" + nameKey]);
+// console.log(pedro.calcAge(2005));
+// console.log(pedro.age);
