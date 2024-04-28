@@ -97,6 +97,7 @@
 // const friends = ["Michael", "Steven", "Peter"];
 // const newLenght = friends.push("Jay");
 // console.log(newLenght);
+
 // // Unshift = add elements to the beginning of the array
 // friends.unshift("John");
 // console.log(friends);
@@ -139,3 +140,13 @@ const pedro = {
   job: "Software Engineer",
   friends: ["Gabriel", "Alex", "Juliano"],
 };
+
+console.log(pedro);
+
+// Dot vs Bracket notation
+console.log(pedro.lastName);
+console.log(pedro["lastName"]);
+
+const nameKey = "Name";
+console.log(pedro["first" + nameKey]);
+console.log(pedro["last" + nameKey]);
