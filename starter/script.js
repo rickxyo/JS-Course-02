@@ -185,6 +185,48 @@
 // Iteration: For Loop
 
 // for loop keeps running while condition is TRUE
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repetition ${rep}`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+const pedroArray = [
+  "Pedro Henrique",
+  "Oldoni",
+  2037 - 2005,
+  "Software Engineer",
+  ["Gabriel", "Alex", "Juliano"],
+];
+
+// Dont do this
+// for (let i = 0; i < 5; i++) {
+//   console.log(pedroArray[i]);
+// }
+
+// Best way
+for (let i = 0; i < pedroArray.length; i++) {
+  console.log(pedroArray[i]);
+}
+
+// Calculate age with loop and array
+const years = [1991, 2007, 1969, 2020];
+const age = [];
+
+for (let i = 0; i < years.length; i++) {
+  age.push(2037 - years[i]);
+}
+
+// Continue and break
+
+// console.log ONLY strings
+for (let i = 0; i < pedroArray.length; i++) {
+  if (typeof pedroArray[i] !== "string") continue;
+
+  console.log(pedroArray[i], typeof pedroArray[i]);
+}
+
+// break with NUMBER
+for (let i = 0; i < pedroArray.length; i++) {
+  if (typeof pedroArray[i] === "number") break;
+
+  console.log(pedroArray[i], typeof pedroArray[i]);
 }
