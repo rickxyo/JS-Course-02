@@ -151,33 +151,40 @@
 // console.log(pedro["first" + nameKey]);
 // console.log(pedro["last" + nameKey]);
 
-const pedro = {
-  firstName: "Pedro Henrique",
-  lastName: "Oldoni",
-  birthYear: 2005,
-  job: "Software Engineer",
-  friends: ["Gabriel", "Alex", "Juliano"],
-  hasDriversLicense: true,
+// const pedro = {
+//   firstName: "Pedro Henrique",
+//   lastName: "Oldoni",
+//   birthYear: 2005,
+//   job: "Software Engineer",
+//   friends: ["Gabriel", "Alex", "Juliano"],
+//   hasDriversLicense: true,
 
-  // calcAge: function (birthYear) {
-  //   return 2037 - birthYear;
-  // },
+//   // calcAge: function (birthYear) {
+//   //   return 2037 - birthYear;
+//   // },
 
-  // calcAge: function () {
-  //   return 2037 - this.birthYear;
-  // },
+//   // calcAge: function () {
+//   //   return 2037 - this.birthYear;
+//   // },
 
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
 
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()} year old ${
-      pedro.job
-    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver´s license.`;
-  },
-};
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()} year old ${
+//       pedro.job
+//     }, and he has ${this.hasDriversLicense ? "a" : "no"} driver´s license.`;
+//   },
+// };
 
 // console.log(pedro.calcAge(2005));
 // console.log(pedro.age);
+
+// Iteration: For Loop
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
